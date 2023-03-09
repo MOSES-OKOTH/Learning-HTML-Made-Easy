@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questionare for enterpreneurs</title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>APPENDIX II: QUESTIONAIRE FOR ENTERPRENEURS</b></legend>
+                <p>
+                    The questionaire is intended to seek information about performance of SMEs funded by microfinance institutions in your
+                    area. Do not indicate your name anywhere in the questionaire. Note that any information supplied here <b>SHALL NOT</b> be used
+                    against you in any way. Therefore, the respondent is encourages to be open in expression of any issue required here.
+                </p>
+
+                <fieldset>
+                    <legend><b>SECTION A: DEMOGRAPHIC INFORMATION</b></legend>
+                    <br>
+                    <p>
+                        <b>Place tick where applicable</b>
+                        <br>
+                        <p>
+                            <b>QUESTION ONE</b>
+                            <br>
+                            a) What is the name of the location where you live
+                            <input list="location">
+                            <datalist id="location">
+                                <option value="Soin"></option>
+                                <option value="Kishaunet"></option>
+                                <option value="Mnagei"></option>
+                                <option value="Lityei"></option>
+                            </datalist>
+                            <br>
+
+                            b) How old are you
+                            <label>
+                                <input type="radio" name="age" value="1">
+                                15-19 years
+                            </label>
+
+                            <input type="radio" name="age" value="2" id="2024">
+                            <label for="2024">20-24 years</label>
+
+                            <input type="radio" name="age" value="3" id="2529">
+                            <label for="2529">25-29 years</label>
+
+                            <input type="radio" name="age" value="4" id="3034">
+                            <label for="3034">30-34 years</label>
+
+                            <input type="radio" name="age" value="5" id="3539">
+                            <label for="3539">35-39 years</label>
+
+                            <br>
+                            c) What is your sex
+                            <select name="sex" id="sex">
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+
+                            <br>
+
+                            d) What is your highest level of education
+                            <select name="educationLevel" id="eduLevel">
+                                <option value="1">Primary school</option>
+                                <option value="2">Secondary school</option>
+                                <optgroup label="Tersiary education">
+                                    <option value="3">College</option>
+                                    <option value="4">University</option>
+                                    <option value="5">Polytechnic</option>
+                                </optgroup>
+                            </select>
+
+                        </p>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>
+                        <b>SECTION B: ROLE OF MEN AND WOMEN IN BUSINESS UNDERTAKING</b>
+                    </legend>
+
+                    <P><b>QUESTION TWO</b></P>
+                    <br>
+
+                    <p>
+                        a) What type of business do you do?
+                        <input type="text" size="20" minlength="5">
+                        <br>
+
+                        b)What was your source of initial capital
+                        <select name="sourceCapital" id="capitalSource">
+                            <option value="1">Farming</option>
+                            <option value="2">Employment income</option>
+                            <option value="3">Personal savings</option>
+                            <option value="4">Any other</option>
+                        </select>
+                        <br>
+
+                        c) If source of capital is <b>any other</b> specify 
+                        <input type="text" size="20">
+                        <br>
+
+                        d) How did you get additional source of capital
+                        <select name="addCapital" id="AddCap">
+                            <option value="1">Loan from Faulu Kenya</option>
+                            <option value="2">Loan from K-Rep</option>
+                            <option value="3">Loan from Cooperative bank</option>
+                            <option selected value="4">Sacco society</option>
+                            <option value="5">Not Listed Here</option>
+                        </select>
+
+                        <br>
+                        If not listed above, specify here <input type="text" minlength="5">
+
+                        <br>
+
+                        e) What role do micro-finance institutions play in your business <br>
+                        <input type="text" placeholder="Role of micro-finance institutions" minlength="3" style="height: 50px; width: 80vw;">
+                        <br>
+
+                        f) Which documents are you required to have in order to access loan facilities? <br>
+                        <input type="text" placeholder="Loan requirements" style="height: 50px; width: 80vw;">
+                        <br>
+
+                        g) What ammount of money does micro-finance institutions averagely give as credit to enterpreneurs in Kericho <br>
+                        (i) Women <input type="text">
+                        (ii) Men <input type="text">
+
+                    </p>
+                </fieldset>
+                <br>
+                <input type="submit" value="SUBMIT">
+            </fieldset>
+        </form>
+    </body>
+</html>

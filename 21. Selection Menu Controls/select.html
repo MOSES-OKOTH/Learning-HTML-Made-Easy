@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selection Menu Controls</title>
+        <link rel="icon" href="icon.png">
+    </head>
+
+
+    <body>
+        <select name="Units">
+            <option value="DM">Discrete Mathematics</option>
+            <option value="C1" selected>Calculus I</option>
+            <option value="C2">Calculus II</option>
+            <option value="CA">Computer Architecture and Design</option>
+        </select>
+
+        <select name="Edibles" id="ED">
+            <optgroup label="Fruits">
+                <option value="Mangoes">Mangoes</option>
+                <option value="Banana">Banana</option>
+                <option value="Avocado">Avocado</option>
+            </optgroup>
+
+            <optgroup label="Schools">
+                <option value="KU">KEnyatta University</option>
+                <option value="tum">Technical university of Mombasa</option>
+            </optgroup>
+        </select>
+
+        <p>
+            Select your prefered programming language
+            <input list="Languages">
+            <datalist id="Languages">
+                <option value="Java"></option>
+                <option value="C++"></option>
+                <option value="C"></option>
+                <option value="PHP"></option>
+                <option value="C#"></option>
+            </datalist>
+        </p>
+    </body>
+</html>
