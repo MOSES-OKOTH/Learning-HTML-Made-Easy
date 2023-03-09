@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms in HTML
+        </title>
+
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="forms.css">
+    </head>
+
+
+    <body>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <p>
+                    Name
+                    <input required type="text" minlength="8" size="30" placeholder="Username">
+                </p>
+
+                <p>
+                    Date of Birth
+                    <input required type="date" size="20">
+                </p>
+
+                <p>
+                    Id Number
+                    <input required minlength="6" type="password" placeholder="Passport/ID Number">
+                </p>
+
+                <p>
+                    Married
+                    <input checked type="checkbox" value="Married">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Educational Background</legend>
+                <p>
+                    Highest levelof Educational
+                    <label>
+                        <input type="radio" name="edulevel" value="Primary">
+                        Primary
+                    </label>
+
+                    <label>
+                        <input checked type="radio" name="edulevel" value="Secondary">
+                        High School
+                    </label>
+
+                    <label>
+                        <input type="radio" name="edulevel" value="Tersiary">
+                        Tersiary level
+                    </label>
+                </p>
+            </fieldset>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

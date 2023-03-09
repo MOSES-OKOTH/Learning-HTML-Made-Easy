@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handling images</title>
+    </head>
+
+    <body>
+        <img sizes="(min-width:460px) 100vw, (min-width:1080px) 50vw" srcset="ACE SOFTWARES BUSINESS CARD.png, ACE SOFTWARES.png " src="ACE SOFTWARES BUSINESS CARD.png" alt="JUST ACE">
+
+        <picture>
+            <source media="(min-width: 480px)" srcset="ACE SOFTWARES.png">
+            <source media="(min-width: 900px)" srcset="ACE SOFTWARES BUSINESS CARD.png">
+            <img src="ACE SOFTWARES.png" alt="JUST ACE">
+        </picture>
+    </body>
+</html>

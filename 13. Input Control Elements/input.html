@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Control Elements</title>
+        <link rel="stylesheet" href="input.css">
+        <link rel="icon" href="icon.png">
+    </head>
+
+    <body>
+        <div id="text">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <P>
+                    Enter your name here
+                    <input required type="text" size="30" placeholder="Full name">
+                </P>
+    
+                <p>
+                    Enter your password here <input type="password" size="25" minlength="8" maxlength="12" placeholder="Password">
+                </p>
+                
+                <p>
+                    Enter your email here <input type="email" size="30" placeholder="Email">
+                </p>
+    
+                <P>
+                    Enter your phone number here <input pattern="\d*" type="tel" minlength="13" placeholder="Phone number">
+                </P>
+    
+                <p>
+                    Input the URL to your portfolio <input type="url" placeholder="url/link">
+                </p>
+
+                <p>
+                    Upload your image here
+                    <input type="file" accept="image/*" title="Images only allowed">
+                </p>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div id="radio">
+                <fieldset>
+                    <legend>Mobile Operator Information</legend>
+                    <p>Select your operator
+                        <!--The label element ensures that the input is labelled and accessible to users with disability-->
+                        <label>
+                            <input type="radio" name="choice" id="saf" value="Safaricom" title="Safaricom">
+                            Safaricom
+                        </label>
+                        
+                        <label>
+                            <input checked type="radio" name="choice" id="air" value="Airtel" title="Airtel">
+                            Airtel
+                            <!--The checked keyword just sets airtel as the default operator before the user does any selection-->
+                        </label>
+        
+                        <label>
+                            <input type="radio" name="choice" id="tel" value="Telkom" title="Telkom">
+                            Telkom
+                        </label>
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend>Highest level of education</legend>
+                    <p>
+                        <input type="radio" name="level" id="sec" value="High School">
+                        <label for="sec">High School</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="level" id="pri" value="Primary School">
+                        <label for="pri">Primary School</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="level" id="uni" value="Tersiary Institutions">
+                        <label for="uni">Tersiary Institutions</label>
+                    </p>
+                </fieldset>
+                
+            </p>
+        </div>
+
+
+        <div id="checkbox">
+            <fieldset>
+                <p>Answer the following questions</p>
+                <p>1. Are you a graduate <input checked type="checkbox" value="YES"></p>
+                <p>2. Are you married <input type="checkbox" value="YES"></p>
+                <p>3. Are you a Kenyan <input type="checkbox" checked value="YES"></p>
+            </fieldset>
+        </div>
+
+
+    </body>
+</html>
